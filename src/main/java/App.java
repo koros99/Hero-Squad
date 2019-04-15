@@ -66,22 +66,22 @@ public class App {
       model.put("template", "templates/squads.vtl");
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
-//
-//    get("/squads/:id", (request, response) -> {
-//      Map<String, Object> model = new HashMap<String, Object>();
-//      Squad squad = Squad.find(Integer.parseInt(request.params(":id")));
-//      model.put("squad", squad);
-//      model.put("template", "templates/squad.vtl");
-//      return new ModelAndView(model, layout);
-//    }, new VelocityTemplateEngine());
-//
-//    get("squads/:id/heroes/new", (request, response) -> {
-//      Map<String, Object> model = new HashMap<String, Object>();
-//      Squad squad = Squad.find(Integer.parseInt(request.params(":id")));
-//      model.put("squad", squad);
-//      model.put("template", "templates/squad-heroes-form.vtl");
-//      return new ModelAndView(model, layout);
-//    }, new VelocityTemplateEngine());
+
+    get("/squads/:id", (request, response) -> {
+      Map<String, Object> model = new HashMap<String, Object>();
+      Squad squad = Squad.find(Integer.parseInt(request.params(":id")));
+      model.put("squad", squad);
+      model.put("template", "templates/squad.vtl");
+      return new ModelAndView(model, layout);
+    }, new VelocityTemplateEngine());
+
+    get("squads/:id/heroes/new", (request, response) -> {
+      Map<String, Object> model = new HashMap<String, Object>();
+      Squad squad = Squad.find(Integer.parseInt(request.params(":id")));
+      model.put("squad", squad);
+      model.put("template", "templates/squad-heroes-form.vtl");
+      return new ModelAndView(model, layout);
+    }, new VelocityTemplateEngine());
 //
     post("/heroes", (request, response) -> {
       Map<String, Object> model = new HashMap<String, Object>();
