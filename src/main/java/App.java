@@ -96,7 +96,7 @@ public class App {
         model.put("heroExists", heroExists);
        }
        else if (squad.getHeroes().size() >= squad.getSize()) {
-         String sizeMet = "Squad size already met";
+         String sizeMet = "Squad size is at maximum";
          model.put("sizeMet", sizeMet);
        }
        else{
