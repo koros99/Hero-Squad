@@ -2,7 +2,7 @@
   <h2 class="display-3">All Squads</h2>
   <br><br>
 
-  #if ($squads)
+  #if ($squad)
   <div class="list-group">
     #foreach ($squad in $squads)
       <a href="/squads/$squad.getId()" class="list-group-item list-group-item-action flex-column align-items-start">
