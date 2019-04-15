@@ -1,10 +1,7 @@
 import java.util.Map;
 import java.util.HashMap;
-import java.util.ArrayList;
-
 import spark.ModelAndView;
 import spark.template.velocity.VelocityTemplateEngine;
-
 import static spark.Spark.*;
 
 public class App {
@@ -54,8 +51,8 @@ public class App {
       Map<String, Object> model = new HashMap<String, Object>();
       String name = request.queryParams("name");
       int size = Integer.parseInt(request.queryParams("size"));
-      String cause = request.queryParams("cause");
-      Squad newSquad= new Squad(name,size,cause);
+      String mission = request.queryParams("mission");
+      Squad newSquad= new Squad(name,size,mission);
       model.put("template", "templates/squad-success.vtl");
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
