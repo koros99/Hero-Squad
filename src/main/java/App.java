@@ -19,23 +19,23 @@ public class App {
      } else {
          port = 4567;
      }
-//
-//    setPort(port);
-//
-//    get("/", (request, response) -> {
-//      Map<String, Object> model = new HashMap<String, Object>();
-//      // model.put("heroes", request.session().attribute("heroes"));
-//      model.put("template", "templates/index.vtl");
-//      return new ModelAndView(model, layout);
-//    }, new VelocityTemplateEngine());
-//
-//    get("/heroes", (request, response) -> {
-//      Map<String, Object> model = new HashMap<String, Object>();
-//      model.put("heroes", Hero.all());
-//      model.put("template", "templates/heroes.vtl");
-//      return new ModelAndView(model, layout);
-//    }, new VelocityTemplateEngine());
-//
+
+    setPort(port);
+
+    get("/", (request, response) -> {
+      Map<String, Object> model = new HashMap<String, Object>();
+      // model.put("heroes", request.session().attribute("heroes"));
+      model.put("template", "templates/index.vtl");
+      return new ModelAndView(model, layout);
+    }, new VelocityTemplateEngine());
+
+    get("/heroes", (request, response) -> {
+      Map<String, Object> model = new HashMap<String, Object>();
+      model.put("heroes", Hero.all());
+      model.put("template", "templates/heroes.vtl");
+      return new ModelAndView(model, layout);
+    }, new VelocityTemplateEngine());
+
 //    get("/heroes/:id", (request, response) -> {
 //      Map<String, Object> model = new HashMap<String, Object>();
 //      Hero hero = Hero.find(Integer.parseInt(request.params(":id")));
