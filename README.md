@@ -11,6 +11,7 @@ Hero squad is a web java application that allows users to fill in squads of supe
 * Clone the project into your local device.
 * Go to the project directory on the terminal and run `gradle run` 
 * Open your website on `localhost:4567` to view the website.
+* The live website is at https://squadofheroes.herokuapp.com/
 
 ## Dependencies
 1. Java
