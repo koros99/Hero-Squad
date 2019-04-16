@@ -1,6 +1,9 @@
 # HERO SQUAD 
 Hero squad is a web java application that allows users to fill in squads of superheroes with their powers, weaknesses and squad missions. Users decide the size of their squads and fill in their favorite heroes.
 
+<img src="https://i.ibb.co/fngX2sv/Screenshot-from-2019-04-16-09-56-28.png" width=100%>
+<img src="https://i.ibb.co/VwRS7yT/Screenshot-from-2019-04-16-09-56-41.png" width=100%>
+
 ## BDD
 1. Users must fill in the squad names, maximum size and mission.
 2. Users can't add more heroes than the maximum size.
